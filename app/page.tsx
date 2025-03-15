@@ -15,7 +15,7 @@ import Clouds_bg from '../public/cloudy_bg.jpeg';
 
 export default function Home() {
   const time = new Date();
-  const api = "436dff6cd24871be3ccea55152686fce";
+  const api = process.env.NEXT_PUBLIC_API_KEY;
 
   interface WeatherData {
     name: string;
